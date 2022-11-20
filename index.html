@@ -60,39 +60,41 @@
       <!-- Модальне вікно -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+          <strong class="modal-title">Залиште свої дані, ми вам передзвонимо</strong>
           <form class="callback-form" name="callback">
-            <label class="form-name">
+            <label class="form-callback">
               <span class="callback-label">Ім'я</span>
-              <input class="input-name" type="text" name="name" >
+              <input class="form-input" type="text" name="name" >
               <svg class="callback-icon" width="12px" height="12px">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </label>
-            <label class="form-phone">
+            <label class="form-callback">
               <span class="callback-label">Телефон</span>
-              <input class="input-phone" type="tel" name="phone" >
+              <input class="form-input" type="tel" name="phone" >
               <svg class="callback-icon" width="13px" height="13px">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </label>
-            <label class="form-mail">
+            <label class="form-callback">
               <span class="callback-label">Пошта</span>
-              <input class="input-mail" type="email" name="mail" >
+              <input class="form-input" type="email" name="mail" >
               <svg class="callback-icon" width="15px" height="12px">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
             </label>
-             <label class="form-comment">
+             <label class="form-callback">
               <span class="callback-label">Коментар</span>
-            
               <textarea class="comment-text" name="commentt"  placeholder="Введіть текст"></textarea>
-              
             </label>
-           
+            <div class="checkbox" role="group">
+              <input class="modal-checkbox" type="checkbox" id="agree">
+              <label for="agree">Погоджуюся з розсилкою та приймаю <a class="agree-link" href="">Умови договору</a></label>
+            </div>
+            <button type="submit" class="form-btn">Відправити</button>
           </form>
-          <button data-modal-close class="modal-btn">
-            <svg class="modal-icon-close" width="11px" height="11px">
+          <button type="submit" class="modal-btn">
+            <svg class="modal-icon-btn" width="11px" height="11px">
               <use href="./images/icons.svg#icon-Vector"></use>
             </svg>
           </button>
@@ -595,9 +597,10 @@
           </ul>
         </div>
           <div class="footer-form">
+            <p class="form-title">Підпишіться на розсилку</p>
             <form name="footer-form-input">
               
-              <label class="form-field">Підпишіться на розсилку
+              <label class="form-field">
                 <input
                   class="footer-input"
                   type="email"
