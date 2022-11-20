@@ -64,21 +64,21 @@
           <form class="callback-form" name="callback">
             <label class="form-callback">
               <span class="callback-label">Ім'я</span>
-              <input class="form-input" type="text" name="name" >
+              <input class="form-input" type="text" name="name" required>
               <svg class="callback-icon" width="12px" height="12px">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </label>
             <label class="form-callback">
               <span class="callback-label">Телефон</span>
-              <input class="form-input" type="tel" name="phone" >
+              <input class="form-input" type="tel" name="phone" required>
               <svg class="callback-icon" width="13px" height="13px">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </label>
             <label class="form-callback">
               <span class="callback-label">Пошта</span>
-              <input class="form-input" type="email" name="mail" >
+              <input class="form-input" type="email" name="mail" required>
               <svg class="callback-icon" width="15px" height="12px">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
@@ -89,7 +89,7 @@
             </label>
             <div class="checkbox" role="group">
               <input class="modal-checkbox" type="checkbox" id="agree">
-              <label for="agree">Погоджуюся з розсилкою та приймаю <a class="agree-link" href="">Умови договору</a></label>
+              <label class="checkbox-label" for="agree">Погоджуюся з розсилкою та приймаю <a class="agree-link" href="">Умови договору</a></label>
             </div>
             <button type="submit" class="form-btn">Відправити</button>
           </form>

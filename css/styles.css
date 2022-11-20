@@ -361,8 +361,12 @@ img {
   top: 437px;
   left: 54px;
 }
+.checkbox-label {
+  user-select: none;
+}
 .agree-link {
   color: rgba(33, 150, 243, 1);
+  text-underline-offset: 2px;
 }
 .modal-checkbox {
   appearance: none;
