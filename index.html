@@ -60,6 +60,37 @@
       <!-- Модальне вікно -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+          <form class="callback-form" name="callback">
+            <label class="form-name">
+              <span class="callback-label">Ім'я</span>
+              <input class="input-name" type="text" name="name" >
+              <svg class="callback-icon" width="12px" height="12px">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </label>
+            <label class="form-phone">
+              <span class="callback-label">Телефон</span>
+              <input class="input-phone" type="tel" name="phone" >
+              <svg class="callback-icon" width="13px" height="13px">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </label>
+            <label class="form-mail">
+              <span class="callback-label">Пошта</span>
+              <input class="input-mail" type="email" name="mail" >
+              <svg class="callback-icon" width="15px" height="12px">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </label>
+             <label class="form-comment">
+              <span class="callback-label">Коментар</span>
+            
+              <textarea class="comment-text" name="commentt"  placeholder="Введіть текст"></textarea>
+              
+            </label>
+           
+          </form>
           <button data-modal-close class="modal-btn">
             <svg class="modal-icon-close" width="11px" height="11px">
               <use href="./images/icons.svg#icon-Vector"></use>
@@ -479,6 +510,7 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
     <footer class="footer-main">
       <div class="container footer">
         <div class="adress-footer">
@@ -562,8 +594,30 @@
             </li>
           </ul>
         </div>
+          <div class="footer-form">
+            <form name="footer-form-input">
+              
+              <label class="form-field">Підпишіться на розсилку
+                <input
+                  class="footer-input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </label>
+              <button class="btn-footer" type="submit">
+                <span class="input-link"> Підписатися</span>
+                <svg class="footer-input-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
   </body>
 </html>
+r8
