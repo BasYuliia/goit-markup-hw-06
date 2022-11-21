@@ -64,32 +64,39 @@
           <form class="callback-form" name="callback">
             <label class="form-callback">
               <span class="callback-label">Ім'я</span>
-              <input class="form-input" type="text" name="name" required>
+              <input class="form-input" type="text" name="name" required />
               <svg class="callback-icon" width="12px" height="12px">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </label>
             <label class="form-callback">
               <span class="callback-label">Телефон</span>
-              <input class="form-input" type="tel" name="phone" required>
+              <input class="form-input" type="tel" name="phone" required />
               <svg class="callback-icon" width="13px" height="13px">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </label>
             <label class="form-callback">
               <span class="callback-label">Пошта</span>
-              <input class="form-input" type="email" name="mail" required>
+              <input class="form-input" type="email" name="mail" required />
               <svg class="callback-icon" width="15px" height="12px">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
             </label>
-             <label class="form-callback">
+            <label class="form-callback">
               <span class="callback-label">Коментар</span>
-              <textarea class="comment-text" name="commentt"  placeholder="Введіть текст"></textarea>
+              <textarea class="comment-text" name="commentt" placeholder="Введіть текст"></textarea>
             </label>
             <div class="checkbox" role="group">
-              <input class="modal-checkbox" type="checkbox" id="agree">
-              <label class="checkbox-label" for="agree">Погоджуюся з розсилкою та приймаю <a class="agree-link" href="">Умови договору</a></label>
+              <input class="modal-checkbox visually-hidden" type="checkbox" id="agree" />
+              <svg class="checkbox-icon" width="16px" height="15px">
+                <use class="unchek" href="./images/icons.svg#icon-uncheck"></use>
+                <use class="check" href="./images/icons.svg#icon-check"></use>
+              </svg>
+              <label class="checkbox-label" for="agree"
+                >Погоджуюся з розсилкою та приймаю
+                <a class="agree-link" href="">Умови договору</a></label
+              >
             </div>
             <button type="submit" class="form-btn">Відправити</button>
           </form>
@@ -596,31 +603,22 @@
             </li>
           </ul>
         </div>
-          <div class="footer-form">
-            <p class="form-title">Підпишіться на розсилку</p>
-            <form name="footer-form-input">
-              
-              <label class="form-field">
-                <input
-                  class="footer-input"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  required
-                />
-              </label>
-              <button class="btn-footer" type="submit">
-                <span class="input-link"> Підписатися</span>
-                <svg class="footer-input-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+        <div class="footer-form">
+          <p class="form-title">Підпишіться на розсилку</p>
+          <form name="footer-form-input">
+            <label class="form-field">
+              <input class="footer-input" type="email" name="email" placeholder="E-mail" required />
+            </label>
+            <button class="btn-footer" type="submit">
+              <span class="input-link"> Підписатися</span>
+              <svg class="footer-input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
   </body>
 </html>
-r8
